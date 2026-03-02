@@ -1,0 +1,44 @@
+
+#navigation{
+    display: block;
+    margin-left: 450px;
+}
+
+#navigation a{
+    background-color: blanchedalmond;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 5px;
+}
+
+#contact{
+    text-align: center;
+}
+#about-size{
+    display: block;
+    width: 600px;
+    
+    
+}
+
+#PFP{
+    width: 500px;
+    height: auto;
+    margin-left: 700px;
+    position: absolute;
+    margin-top: -90px ;
+    
+}
+
+#Experience{
+    
+
+}
+#Experience {
+    background: url('./IMG/section2img.jpg') center/cover  no-repeat;
+    height: 450px;
+    text-align: center;
+    padding-top: 50px;
+}

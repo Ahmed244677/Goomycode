@@ -3,64 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>My portfolio</title>
 </head>
 <body>
     <style>
         body{
-            background: url('IMG/coolbackgrounds-fractalize-bleach.png');
+            background: linear-gradient(
+             130deg,
+            #1a1a2e, /* deep navy */
+            #4a0e8f, /* royal purple */
+            #8b0000, /* dark red */
+            #1a1a2e
+            );
+            font-family: Roboto;
+            color: white;
+             margin: 0;
+             padding: 0;
         }
     </style>
     <h1 style="text-align: center;">Ahmed Portfolio</h1>
-    <navbar name="navigation">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#internships">Internships</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#Contact">Contact</a></li>
-
-        </ul>
+    <navbar id="navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#internships">Internships</a>
+            <a href="#resume">Resume</a>
+            <a href="#Contact">Contact</a>
     </navbar>
-    <h1 id="about">About</h1>
+    <hr style="margin-top: 30px;">
+    <h1 id="about"><mark>Your creative partner</mark></h1>
+    <img id="PFP" src="./IMG/PFP.png">
+    <section id="about-size">
     <p>
         Hi, I’m Ahmed, 21, and a student in Industrial Electricity. I’m also learning web development to expand my career options and explore freelance opportunities, as I enjoy creativity and problem-solving. In my free time, I like playing video games—especially Death Stranding—and watching superhero movies.
     </p>
     <p><i>audio that explains my approch for solving technical problems</i></p>
-    <section name="audio-intro">
+    
         <audio controls>
             <source src="\audio\my approch for solving problems.mp3" type="audio/mp3">
             your browser does not support this type of audio file.
         </audio>
     </section>
-    <hr>
-    <h1 id="internships">Internships</h1>
-    <aside>
-        <ol type="I">
-        <li> <dl><i>Afric plomb</i> 
+    
+    <h1 id="internships"><mark>Internships</mark></h1>
+    <section id="Experience">
+        
+         <dl><i>Afric plomb</i> 
            <dd><b>I was installing Electrical panel</b></dd>
         </dl>
-        </li>
+        
         <br>
-        <li> <dl><i>Birif Amenagement</i> 
+            <dl><i>Birif Amenagement</i> 
            <dd><b>Installed electrical systems and wired equipment following safety standards.</b></dd>
         </dl>
-        </li>
+        
         <br>
-        <li> <dl><i>Medexel</i> 
+         <dl><i>Medexel</i> 
            <dd><b>Completed an observational internship exploring medical equipment operation and basic installation.</b></dd>
         </dl>
-        </li>
+        
         <br>
-        <li> <dl><i>CHAMSI ELEC</i> 
+         <dl><i>CHAMSI ELEC</i> 
            <dd><b>Wired electrical panels from technical drawings across various commercial and industrial applications.</b></dd>
         </dl>
-        </li>
-
         
-        </ol>
         
-    </aside>
+    </section>
     <br>
     <hr>
     <section id="resume">
@@ -78,17 +87,14 @@
     </section>
     <br>
     <hr>
-    <h1>Contact</h1>
+    
     <form id="contact">
+        <h2>Contact</h2>
         <p><b>Email:</b><i> ahmedelkadioui399@gmail.com</i></p>
         <p><b>Phone number:</b><i> 06 55 25 67 85</i></p>
         <p><b>Instagram :</b><i> @elkadiouiahmed</i></p><br>
         <label>Message</label><br>
         <textarea id="message" name="message" rows="6" cols="45" placeholder="write your message in here :)"></textarea>
     </form>
-    
-
-
-    
 </body>
 </html>
